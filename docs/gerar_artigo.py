@@ -483,7 +483,7 @@ def build_content(data: dict) -> dict:
                   "com LLM Local",
         "autores": "Biel Aguiar, Thiago Rocha",
         "afiliacao": "Curso de Bacharelado em Ciência da Computação – Unipê Cruzeiro do Sul",
-        "emails": "{[e-mails dos integrantes]}",
+        "emails": "",  # preencher com os e-mails dos autores, se quiserem (a linha some quando vazia)
         "abstract": abstract,
         "resumo": resumo,
         "blocks": blocks,
@@ -554,7 +554,7 @@ def render_docx(c: dict, path: Path) -> None:
     fmt(p, WD_ALIGN_PARAGRAPH.CENTER, after=6)
     r = p.add_run(c["autores"])
     r.bold = True
-    for line in (c["afiliacao"], c["emails"]):
+    for line in [x for x in (c["afiliacao"], c["emails"]) if x]:
         p = doc.add_paragraph()
         fmt(p, WD_ALIGN_PARAGRAPH.CENTER, after=0)
         p.add_run(line).font.size = Pt(10 if line == c["emails"] else 12)

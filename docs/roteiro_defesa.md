@@ -90,6 +90,10 @@ nomes comerciais e sinônimos, correspondência por tokens (paciente "Maria Jos�
 similaridade aproximada (warfarina → varfarina). Os nós são gravados com `MERGE` no id normalizado, então a mesma
 entidade vinda de documentos diferentes vira um nó só.
 
+**O enunciado fala em índices BTree. Por que vocês usam RANGE?** No Neo4j 5 o índice BTREE foi removido e
+substituído pelo RANGE, que cumpre o mesmo papel (igualdade, intervalo, prefixo). As constraints de unicidade
+também criam índices RANGE por baixo.
+
 **Para que servem os índices?** Constraint de unicidade garante o MERGE idempotente e cria índice RANGE em `id`.
 FULLTEXT liga termos da pergunta a entidades, com tolerância a erro (`warfarina~1`). VECTOR faz a busca semântica
 nos trechos. RANGE em `gravidade` acelera o filtro de interações graves.

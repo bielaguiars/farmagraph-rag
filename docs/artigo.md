@@ -2,7 +2,7 @@
 
 **Biel Aguiar, Thiago Rocha**  
 Curso de Bacharelado em Ciência da Computação – Unipê Cruzeiro do Sul  
-{[e-mails dos integrantes]}
+
 
 > **Abstract.** *Large language models (LLMs) hallucinate and struggle with questions that require chaining facts from different sources, which is critical in healthcare. This paper presents FarmaGraph RAG, a question answering system about drugs that combines vector search and traversal of a Neo4j knowledge graph (GraphRAG) with logical queries over the graph (KAG). The graph is built from 22 simplified drug leaflets and 7 fictitious medical records by a local LLM (Llama 3.2, 3B) using structured output, section-guided extraction, six semantic constraints and entity resolution. Retrieval uses VECTOR, FULLTEXT and RANGE indexes, multi-hop expansion, shortest paths, PageRank and LLM-generated Cypher validated as read-only. Extraction reached 0.99 precision and 0.85 recall against 168 reference facts, and GraphRAG covered 94.0% of the expected facts in 9 multi-hop questions, versus 17.0% for vector-only RAG and 15.0% for the LLM without context.*
 
