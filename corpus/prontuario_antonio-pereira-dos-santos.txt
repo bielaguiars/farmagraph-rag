@@ -1,0 +1,4 @@
+PRONTUÁRIO AMBULATORIAL (FICTÍCIO)
+Paciente fictício criado para fins acadêmicos.
+
+Antônio Pereira dos Santos, 58 anos, acompanhado por diabetes tipo 2, insuficiência cardíaca e hipertensão arterial. Usa de forma contínua Glifage 850 mg 2x/dia, Renitec 10 mg 2x/dia e Aldactone 25 mg/dia. Refere boa adesão, sem internações no último ano e discreto cansaço aos grandes esforços. Peso estável, pressão arterial de 128 por 78 mmHg, sem edema importante em membros inferiores, e refere sono e apetite preservados. Exames recentes mostram glicemia de jejum em 118 mg/dL e potássio elevado. Conduta em avaliação: repetir os exames laboratoriais na próxima semana, manter o acompanhamento regular e reforçar as orientações de alimentação, hidratação e atividade física leve, com retorno ambulatorial agendado.

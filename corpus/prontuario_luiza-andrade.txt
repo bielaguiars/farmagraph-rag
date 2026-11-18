@@ -1,0 +1,4 @@
+PRONTUÁRIO AMBULATORIAL (FICTÍCIO)
+Paciente fictício criado para fins acadêmicos.
+
+Luiza Andrade, 29 anos, procura atendimento com febre e dor no corpo há dois dias, associadas a cefaleia e mal-estar geral. Há suspeita de dengue, e ela mora em região com casos recentes da doença. Não tem outras doenças crônicas e não usa medicamentos contínuos. Ao exame, está hidratada, com temperatura de 38,6 graus e pressão arterial de 110 por 70 mmHg, sem manchas na pele. Conduta em avaliação: solicitar exames laboratoriais, incluindo hemograma, e manter a observação clínica. Orientada a ingerir bastante líquido, permanecer em repouso e retornar imediatamente se surgirem novos sintomas. Sem viagens recentes, sem contato domiciliar com sintomas semelhantes e sem alergias conhecidas a alimentos ou outras substâncias.

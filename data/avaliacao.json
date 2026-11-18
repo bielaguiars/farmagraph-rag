@@ -1,0 +1,397 @@
+{
+  "extracao": {
+    "por_relacao": [
+      {
+        "relação": "PERTENCE_A_CLASSE",
+        "gabarito": 22,
+        "extraídas": 18,
+        "corretas": 18,
+        "precisão": 1.0,
+        "recall": 0.818,
+        "F1": 0.9
+      },
+      {
+        "relação": "TRATA",
+        "gabarito": 38,
+        "extraídas": 30,
+        "corretas": 30,
+        "precisão": 1.0,
+        "recall": 0.789,
+        "F1": 0.882
+      },
+      {
+        "relação": "CONTRAINDICADO_EM",
+        "gabarito": 23,
+        "extraídas": 23,
+        "corretas": 23,
+        "precisão": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      {
+        "relação": "PODE_CAUSAR",
+        "gabarito": 34,
+        "extraídas": 25,
+        "corretas": 25,
+        "precisão": 1.0,
+        "recall": 0.735,
+        "F1": 0.847
+      },
+      {
+        "relação": "INTERAGE_COM",
+        "gabarito": 22,
+        "extraídas": 22,
+        "corretas": 22,
+        "precisão": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      {
+        "relação": "USA",
+        "gabarito": 13,
+        "extraídas": 13,
+        "corretas": 13,
+        "precisão": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      {
+        "relação": "TEM_CONDICAO",
+        "gabarito": 16,
+        "extraídas": 12,
+        "corretas": 11,
+        "precisão": 0.917,
+        "recall": 0.688,
+        "F1": 0.786
+      },
+      {
+        "relação": "TOTAL",
+        "gabarito": 168,
+        "extraídas": 143,
+        "corretas": 142,
+        "precisão": 0.993,
+        "recall": 0.845,
+        "F1": 0.913
+      }
+    ],
+    "gravidade_correta": "22/22",
+    "erros": [
+      {
+        "tipo": "PERTENCE_A_CLASSE",
+        "origem": "levotiroxina",
+        "destino": "hormonio tireoidiano",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PERTENCE_A_CLASSE",
+        "origem": "tramadol",
+        "destino": "analgesico opioide",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PERTENCE_A_CLASSE",
+        "origem": "fluoxetina",
+        "destino": "inibidor seletivo da recaptacao de serotonina",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PERTENCE_A_CLASSE",
+        "origem": "omeprazol",
+        "destino": "inibidor da bomba de proton",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "enalapril",
+        "destino": "insuficiencia cardiaca",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "ibuprofeno",
+        "destino": "febre",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "ibuprofeno",
+        "destino": "inflamacao",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "omeprazol",
+        "destino": "ulcera peptica",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "losartana",
+        "destino": "nefropatia diabetica",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "dipirona",
+        "destino": "dor",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "acido acetilsalicilico",
+        "destino": "febre",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TRATA",
+        "origem": "anlodipino",
+        "destino": "angina",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "tramadol",
+        "destino": "convulsao",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "losartana",
+        "destino": "tontura",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "metformina",
+        "destino": "acidose latica",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "clonazepam",
+        "destino": "sonolencia",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "enalapril",
+        "destino": "tosse seca",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "metformina",
+        "destino": "desconforto gastrointestinal",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "carbonato de litio",
+        "destino": "intoxicacao por litio",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "omeprazol",
+        "destino": "deficiencia de vitamina b12",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "PODE_CAUSAR",
+        "origem": "clonazepam",
+        "destino": "dependencia",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "luiza andrade",
+        "destino": "cefaleia",
+        "erro": "extraída mas não está no gabarito"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "jose carlos albuquerque",
+        "destino": "pneumonia",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "luiza andrade",
+        "destino": "dengue",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "jose carlos albuquerque",
+        "destino": "hipertensao arterial",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "jose carlos albuquerque",
+        "destino": "angina",
+        "erro": "faltou extrair"
+      },
+      {
+        "tipo": "TEM_CONDICAO",
+        "origem": "jose carlos albuquerque",
+        "destino": "hipercolesterolemia",
+        "erro": "faltou extrair"
+      }
+    ],
+    "observacao": "Comparação com o gabarito (data/gabarito.json). Gravidade das interações extraídas correta em 22 de 22. Nomes comparados após normalização e similaridade ≥ 0,85."
+  },
+  "qa": {
+    "resumo": [
+      {
+        "modo": "LLM sem contexto",
+        "cobertura média dos fatos esperados": 0.15,
+        "perguntas 100% corretas": "1/9",
+        "tempo médio (s)": 6.8
+      },
+      {
+        "modo": "RAG só vetorial",
+        "cobertura média dos fatos esperados": 0.17,
+        "perguntas 100% corretas": "0/9",
+        "tempo médio (s)": 15.6,
+        "entidades sem suporte (total)": 5
+      },
+      {
+        "modo": "GraphRAG (este projeto)",
+        "cobertura média dos fatos esperados": 0.94,
+        "perguntas 100% corretas": "8/9",
+        "tempo médio (s)": 23.8,
+        "entidades sem suporte (total)": 0
+      }
+    ],
+    "detalhes": [
+      {
+        "pergunta": "A Maria José pode tomar ibuprofeno para a dor no joelho?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 6.8,
+        "LLM sem contexto · resposta": "Sim, mas é importante considerar alguns fatores antes de tomar qualquer medicamento. O ibuprofeno é um anti-inflamatório não esteroide (AINE) que pode ser eficaz para aliviar a dor e a inflamação no joelho. No entanto, é fundamental consultar um médico antes de iniciar o tratamento, especialmente se a dor for causada por uma condição subjacente, como artrite. Além disso, é importante seguir as instruções do médico e não exceder a dose recomendada para evitar efeitos colaterais. É também importante lembrar que o ibuprofeno não é um tratamento para causas subjacentes da dor no joelho.",
+        "RAG só vetorial · cobertura": 0.33,
+        "RAG só vetorial · sem suporte": 0,
+        "RAG só vetorial · s": 15.7,
+        "RAG só vetorial · resposta": "Não encontrou informações específicas sobre o uso de ibuprofeno em pacientes com artrose e hipertensão, como o caso da Maria José. No entanto, de acordo com [T2], há interação de gravidade moderada entre o ibuprofeno (Advil) e a enalapril, que é um medicamento utilizado para tratar a hipertensão. A associação desses medicamentos pode reduzir o fluxo sanguíneo renal e aumentar o risco de lesão renal aguda.\n\nPortanto, é recomendável consultar um médico antes de prescrever ibuprofeno para a dor no joelho da Maria José, especialmente considerando que ela já está tomando enalapril. É importante avaliar os benefícios e riscos potenciais dessa associação e buscar uma alternativa segura e eficaz para o tratamento da dor.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 22.9,
+        "GraphRAG (este projeto) · resposta": "Pergunta: A Maria José pode tomar ibuprofeno para a dor no joelho?\n\nAlerta [K1]: Não é recomendável que Maria José tome ibuprofeno devido à interação grave com varfarina, o que pode causar sangramento.\n\nAlerta [K2]: Não é recomendável que Maria José tome ibuprofeno devido à interação moderada com losartana, o que pode causar lesão renal aguda.\n\nAlerta [K3]: Sim, é seguro para Maria José tomar tramadol como alternativa para tratar a dor no joelho.\n\nAlerta [K4]: Não é recomendável que Maria José tome ibuprofeno devido às interações moderadas com losartana e varfarina, o que podem causar lesão renal aguda e sangramento.\n\nAlerta [K5]: Não é recomendável que Maria José tome paracetamol devido à interação moderada com varfarina, o que pode aumentar o INR."
+      },
+      {
+        "pergunta": "Qual o risco de prescrever claritromicina para o José Carlos?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 2.8,
+        "LLM sem contexto · resposta": "Não posso fornecer informações sobre prescrição médica específica. Posso ajudar com outra coisa?",
+        "RAG só vetorial · cobertura": 0.0,
+        "RAG só vetorial · sem suporte": 1,
+        "RAG só vetorial · s": 14.0,
+        "RAG só vetorial · resposta": "Não encontrei informações suficientes para responder à sua pergunta. Não há informações sobre o José Carlos, como idade, condição médica ou outras características relevantes que possam influenciar a escolha da claritromicina como medicamento. Além disso, não há informações sobre outros medicamentos que o José Carlos possa estar tomando, o que é importante para avaliar o risco de interações medicamentosas.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 17.7,
+        "GraphRAG (este projeto) · resposta": "Conclusão do grafo: José Carlos Albuquerque usa sinvastatina, que INTERAGE_COM claritromicina (medicamento citado na pergunta): gravidade alta, efeito rabdomiólise. [K1] José Carlos Albuquerque usa anlodipino, que INTERAGE_COM sinvastatina (ambos já em uso): gravidade moderada, efeito miopatia. [K2]\n\nNão posso fornecer uma resposta específica sobre o risco de prescrever claritromicina para José Carlos. Posso oferecer informações gerais sobre como lidar com interações medicamentosas?"
+      },
+      {
+        "pergunta": "A Ana Beatriz pode usar Tramal depois da cirurgia?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 3.8,
+        "LLM sem contexto · resposta": "Não é recomendado prescrever medicamentos como o Tramal (tramadol) após uma cirurgia, pois pode aumentar o risco de sangramento e complicações. É importante consultar um médico para obter orientações específicas sobre o tratamento pós-operatório.",
+        "RAG só vetorial · cobertura": 0.0,
+        "RAG só vetorial · sem suporte": 0,
+        "RAG só vetorial · s": 10.7,
+        "RAG só vetorial · resposta": "Não encontrou informações suficientes para responder à pergunta. Não há nenhuma informação sobre o uso do Tramal em pacientes com dor pós-operatória ou sobre a prescrição de medicamentos após cirurgias.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 21.9,
+        "GraphRAG (este projeto) · resposta": "Conclusão do grafo: Ana Beatriz Lima usa fluoxetina, que INTERAGE_COM tramadol (medicamento citado na pergunta): gravidade alta, efeito síndrome serotoninérgica. [K1]\n\nNão é recomendável que a Ana Beatriz use Tramal após a cirurgia devido à interação com a fluoxetina, que pode causar uma grave reação conhecida como síndrome serotoninérgica. É importante consultar um médico antes de iniciar qualquer medicamento após uma cirurgia. Além disso, é fundamental discutir os riscos e benefícios do uso de Tramal com o profissional de saúde responsável."
+      },
+      {
+        "pergunta": "Por que o potássio do Antônio pode estar alto?",
+        "LLM sem contexto · cobertura": 0.33,
+        "LLM sem contexto · s": 7.5,
+        "LLM sem contexto · resposta": "O potássio alto pode ocorrer devido a várias razões. Algumas possíveis causas incluem:\n\n- Uso excessivo de medicamentos que contêm potássio, como diuréticos ou antiarrítmicos.\n- Doenças renais crônicas, que podem afetar a eliminação do potássio do corpo.\n- Deficiência de bicarbonato de sódio, que pode levar a uma retenção de potássio.\n- Uso inadequado de suplementos de potássio.\n- Problemas de equilíbrio eletrolítico, como hipocalemia (nível baixo de cálcio no sangue).\n\nÉ importante consultar um médico para determinar a causa específica do alto nível de potássio e receber orientação adequada.",
+        "RAG só vetorial · cobertura": 0.33,
+        "RAG só vetorial · sem suporte": 0,
+        "RAG só vetorial · s": 14.5,
+        "RAG só vetorial · resposta": "Peço desculpas, mas não encontrei informações sobre um paciente chamado Antônio em nenhum dos textos fornecidos. Além disso, não há nenhuma informação sobre a causa de um potássio alto no prontuário de Maria José Ferreira.\n\nNo entanto, posso sugerir que o potássio pode estar alto devido a uma condição médica ou tratamento. Algumas possíveis causas incluem:\n\n* Síndrome de Cushing\n* Síndrome de Conn (hiperplasia adrenal congênita)\n* Uso excessivo de diuréticos\n* Doenças renais crônicas\n\nÉ importante notar que isso é apenas uma hipótese e não pode ser confirmada sem mais informações. Se você tiver mais detalhes sobre o caso do Antônio, posso tentar ajudar melhor.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 18.7,
+        "GraphRAG (este projeto) · resposta": "O potássio do Antônio pode estar alto devido à interação entre o medicamento enalapril que ele usa e a espironolactona, outro medicamento que ele já está tomando. Isso pode causar uma gravidade alta e um efeito hipercalemia. É importante monitorar os níveis de potássio e ajustar a dose do enalapril se necessário. [K1]"
+      },
+      {
+        "pergunta": "Há interações entre os medicamentos do Roberto?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 7.4,
+        "LLM sem contexto · resposta": "Sim, é comum que haja interações entre os medicamentos prescritos por um médico. Isso ocorre quando dois ou mais medicamentos têm efeitos semelhantes ou afetam o mesmo sistema do corpo, levando a efeitos colaterais indesejados. É importante informar ao médico sobre todos os medicamentos que você está tomando, incluindo remédios de venda livre e suplementos, para evitar essas interações. Além disso, é fundamental seguir as instruções do médico e não automedicar-se. As interações podem ser graves em alguns casos, como alterações no ritmo cardíaco ou aumento da pressão arterial. Portanto, é crucial discutir todas as suas opções de tratamento com o seu médico para encontrar a melhor solução para seus problemas de saúde.",
+        "RAG só vetorial · cobertura": 0.0,
+        "RAG só vetorial · sem suporte": 1,
+        "RAG só vetorial · s": 17.0,
+        "RAG só vetorial · resposta": "Para responder a essa pergunta, preciso saber quais medicamentos o Roberto está tomando. Infelizmente, não há informações sobre isso. No entanto, posso dizer que existem interações medicamentosas graves entre alguns medicamentos, como mencionado nas bulas de hidroclorotiazida e carbonato de lítio, e espironolactona.\n\nSe o Roberto está tomando algum desses medicamentos, é importante lembrar que a associação com outros medicamentos pode causar interações graves. Por exemplo, a combinação do carbonato de lítio com ibuprofeno ou hidroclorotiazida pode causar intoxicação por lítio.\n\nSe você puder fornecer mais informações sobre os medicamentos que o Roberto está tomando, posso tentar dar uma resposta mais precisa.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 25.5,
+        "GraphRAG (este projeto) · resposta": "Para entender as interações entre os medicamentos do Roberto, é importante analisar cada ALERTA:\n\n[K1] A levotiroxina, usada para tratar hipotiroidismo, INTERAGE_COM omeprazol. Isso significa que a combinação desses dois medicamentos pode reduzir a absorção de um ou ambos os medicamentos. É importante monitorar as doses e os efeitos dos medicamentos.\n\n[K2] A clopidogrel, usada para prevenir acidentes cardiovasculares, INTERAGE_COM omeprazol. Isso significa que a combinação desses dois medicamentos pode reduzir o efeito antiplaquetário da clopidogrel. É importante monitorar os níveis de plaquetas e ajustar a dose da clopidogrel.\n\n[K3] A clopidogrel, usada para prevenir acidentes cardiovasculares, INTERAGE_COM ácido acetilsalicílico. Isso significa que a combinação desses dois medicamentos pode aumentar o risco de sangramento por dupla antiagregação plaquetária. É importante evitar a combinação desses medicamentos.\n\nOrientação prática: Se Roberto Nunes Cavalcanti está usando esses medicamentos, é fundamental discutir com seu médico sobre as interações e ajustar as doses ou escolher alternativas seguras."
+      },
+      {
+        "pergunta": "Que remédio para febre é seguro para a Luiza, com suspeita de dengue?",
+        "LLM sem contexto · cobertura": 1.0,
+        "LLM sem contexto · s": 8.5,
+        "LLM sem contexto · resposta": "Lamento, mas não posso fornecer um diagnóstico médico ou recomendar um medicamento específico. No entanto, posso oferecer algumas informações gerais.\n\nSe Luiza apresenta febre e suspeita de dengue, é fundamental que ela procure atendimento médico imediatamente. A dengue é uma doença grave que pode causar complicações sérias, como hemorragia e insuficiência renal.\n\nO tratamento inicial para a febre associada à dengue geralmente envolve o uso de medicamentos para reduzir a temperatura e aliviar os sintomas, como paracetamol ou ibuprofeno. No entanto, é essencial que um profissional de saúde avalie Luiza e prescreva o tratamento adequado.\n\nÉ importante lembrar que o diagnóstico e o tratamento da dengue devem ser feitos por um médico qualificado, pois a doença pode ter complicações graves se não for tratada corretamente.",
+        "RAG só vetorial · cobertura": 0.5,
+        "RAG só vetorial · sem suporte": 2,
+        "RAG só vetorial · s": 15.5,
+        "RAG só vetorial · resposta": "Não encontrou informações suficientes para recomendar um medicamento específico para a Luiza. No entanto, considerando as contraindicações mencionadas em [T2] e [T3], não é recomendável o uso de medicamentos anti-inflamatórios não esteroides (AINEs) como ibuprofeno ou ácido acetilsalicílico para a Luiza, pois ela tem suspeita de dengue. É necessário solicitar exames laboratoriais e manter a observação clínica antes de iniciar qualquer tratamento.",
+        "GraphRAG (este projeto) · cobertura": 0.5,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 21.9,
+        "GraphRAG (este projeto) · resposta": "Conclusão do grafo: dipirona TRATA febre e não tem interação nem contraindicação registrada para este caso. [K1] paracetamol TRATA febre e não tem interação nem contraindicação registrada para este caso. [K2]\n\nPara a Luiza, com suspeita de dengue, é recomendado o uso do paracetamol, pois ele trata a febre sem ter interações ou contraindicações registradas para esse caso. O dipirona também pode ser usado, mas não há informações adicionais que sugiram uma escolha preferencial. É importante lembrar que o diagnóstico de dengue deve ser feito por um profissional de saúde."
+      },
+      {
+        "pergunta": "A Francisca pode começar hidroclorotiazida para a pressão?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 8.4,
+        "LLM sem contexto · resposta": "Não é recomendado iniciar o tratamento com hidroclorotiazida sem orientação médica. É importante avaliar a prescrição de medicamentos, especialmente em casos de pressão arterial, sob orientação de um profissional de saúde. A hidroclorotiazida é um medicamento utilizado para tratar a hipertensão, mas seu uso deve ser individualizado e monitorado por um médico. É fundamental discutir os riscos e benefícios com um profissional de saúde antes de iniciar qualquer tratamento. Além disso, é importante considerar outros fatores que podem influenciar a escolha do medicamento, como condições médicas subjacentes e histórico farmacológico. Em resumo, não se recomenda iniciar hidroclorotiazida sem orientação médica. É sempre melhor consultar um médico para uma avaliação personalizada e segura.",
+        "RAG só vetorial · cobertura": 0.0,
+        "RAG só vetorial · sem suporte": 1,
+        "RAG só vetorial · s": 19.5,
+        "RAG só vetorial · resposta": "Não encontrou informações específicas sobre a prescrição de hidroclorotiazida para a pressão arterial em pacientes com condições médicas específicas. No entanto, é importante notar que a hidroclorotiazida é um medicamento antihipertensivo e pode ser prescrito para tratar a hipertensão.\n\nDe acordo com [T2], o princípio ativo da hidroclorotiazida é o mesmo mencionado em [T3] como sendo o princípio ativo do comprimido Clorana, apresentado em embalagens com blister.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 26.9,
+        "GraphRAG (este projeto) · resposta": "Conclusão do grafo: Francisca das Chagas Souza usa carbonato de lítio, que INTERAGE_COM hidroclorotiazida (medicamento citado na pergunta): gravidade alta, efeito intoxicação por lítio, redução da depuração renal do lítio. [K1]\n\nNão é recomendável que Francisca comece a hidroclorotiazida, pois o carbonato de lítio com que ela está tomando INTERAGE_COM a hidroclorotiazida pode causar gravidade alta e redução da depuração renal do lítio. É importante consultar um médico antes de iniciar qualquer tratamento. É recomendável uma avaliação cuidadosa antes de iniciar o tratamento com hidroclorotiazida."
+      },
+      {
+        "pergunta": "Quais medicamentos interagem com a varfarina?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 7.6,
+        "LLM sem contexto · resposta": "A varfarina é um anticoagulante oral que interfere na produção de fator II da coagulação sanguínea. Medicamentos que podem interagir com a varfarina incluem:\n\n- Inibidores da PPI (protonopresorvas): podem aumentar o risco de sangramento.\n- Antibióticos: como rifampicina, estreptomicina e gentamicina, podem reduzir os níveis de varfarina no sangue.\n- Anticoncepcionais orais: podem aumentar o risco de sangramento.\n- Medicamentos para a pressão arterial: como enalapril e lisinopresina, podem aumentar o risco de sangramento.\n\nÉ importante consultar um médico antes de iniciar ou interromper qualquer medicamento que esteja tomando varfarina.",
+        "RAG só vetorial · cobertura": 0.33,
+        "RAG só vetorial · sem suporte": 0,
+        "RAG só vetorial · s": 17.7,
+        "RAG só vetorial · resposta": "Segundo as informações disponíveis, os medicamentos que interagem com a varfarina (Marevan) são:\n\n* Coumadin (varfarina): interação de gravidade alta e causa sangramento.\n* Ibuprofeno: interação de gravidade moderada, reduzindo o efeito cardioprotetor.\n* Clopidogrel (Plavix): interação de gravidade moderada, causando sangramento por dupla antiagregação plaquetária.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 30.9,
+        "GraphRAG (este projeto) · resposta": "Para responder à sua pergunta, os medicamentos que interagem com a varfarina são:\n\n* Ibuprofeno [G1], [T2] e [G7]: há interações de gravidade alta e moderada, respectivamente, que podem causar sangramento ou redução do efeito cardioprotetor.\n* Ácido acetilsalicílico [G2], [T2] e [G15]: há interações de gravidade alta e moderada que podem causar sangramento por dupla antiagregação plaquetária.\n* Claritromicina [G3], [T9]: há interação de gravidade alta que pode causar sangramento.\n* Clopidogrel [G4], [T2] e [G15]: há interações de gravidade moderada que podem causar sangramento por dupla antiagregação plaquetária.\n* Paracetamol [G5]: há interação de gravidade moderada que pode aumentar o INR.\n* Ciprofloxacino [G6], [T1]: há interação de gravidade alta que reduz o metabolismo da varfarina, elevando o INR.\n* Sinvastatina [G9], [T9]: há interação de gravidade alta que pode causar rabdomiólise.\n* Enalapril [G10], [T19]: há interação de gravidade moderada que pode causar lesão renal aguda.\n\nÉ importante discutir essas interações com o médico antes de iniciar ou alterar qualquer medicamento."
+      },
+      {
+        "pergunta": "Como a fluoxetina se relaciona com o clonazepam?",
+        "LLM sem contexto · cobertura": 0.0,
+        "LLM sem contexto · s": 8.6,
+        "LLM sem contexto · resposta": "A fluoxetina é um antidepressivo selectivo da inibição da recaptação de serotonina (ISRS), enquanto o clonazepam é um ansiolítico e anticonvulsivante. A combinação desses medicamentos pode causar efeitos adversos, como sedação, tontura e aumento do risco de suicídio. Além disso, a fluoxetina pode aumentar os níveis de clonazepam no sangue, o que pode levar a efeitos colaterais mais graves. É importante que os pacientes que tomam ambos medicamentos sejam monitorados regularmente por um médico. A dose de clonazepam deve ser ajustada com cuidado para evitar efeitos adversos. Em alguns casos, a fluoxetina pode interagir com o metabolismo do clonazepam, aumentando seus níveis no sangue. É fundamental discutir essas possíveis interações com um médico antes de iniciar ou ajustar o tratamento com ambos medicamentos.",
+        "RAG só vetorial · cobertura": 0.0,
+        "RAG só vetorial · sem suporte": 0,
+        "RAG só vetorial · s": 15.9,
+        "RAG só vetorial · resposta": "Não encontrei informações sobre interação específica entre a fluoxetina e o clonazepam nos textos fornecidos. No entanto, de acordo com [T1], há uma interação de gravidade alta quando se associa Prozac (fluoxetina) com Rivotril (clonazepam), que pode resultar em depressão respiratória.",
+        "GraphRAG (este projeto) · cobertura": 1.0,
+        "GraphRAG (este projeto) · sem suporte": 0,
+        "GraphRAG (este projeto) · s": 27.7,
+        "GraphRAG (este projeto) · resposta": "Conclusão do grafo: Não há relação direta entre fluoxetina e clonazepam no grafo; eles se ligam em 2 saltos: fluoxetina -INTERAGE_COM-> tramadol <-INTERAGE_COM- clonazepam. Detalhes: fluoxetina INTERAGE_COM tramadol (alta, síndrome serotoninérgica); clonazepam INTERAGE_COM tramadol (alta, depressao respiratoria). [K1]\n\nNão há relação direta entre fluoxetina e clonazepam no grafo. Eles se ligam em 2 saltos: fluoxetina -> tramadol <- clonazepam.\n\nO que isso significa é que a fluoxetina pode aumentar os níveis de tramadol no corpo, o que pode causar uma reação adversa conhecida como síndrome serotoninérgica. Já o clonazepam também pode aumentar os níveis de tramadol, mas com um risco de depressão respiratória.\n\nO importante é ter cuidado ao prescrever ou consumir esses medicamentos juntos, pois a interação pode ser perigosa. Se você está tomando fluoxetina e clonazepam, é fundamental consultar seu médico para avaliar os riscos e benefícios."
+      }
+    ],
+    "metodo": "Cobertura = fração dos fatos esperados (gabarito) presentes na resposta. 'Sem suporte' = entidades citadas na resposta que não aparecem no contexto recuperado (indício de alucinação)."
+  }
+}

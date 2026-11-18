@@ -1,0 +1,23 @@
+BULA SIMPLIFICADA — VARFARINA
+Documento fictício e simplificado para fins acadêmicos. Não use como orientação médica.
+
+Princípio ativo e apresentação
+A varfarina é o princípio ativo de comprimidos orais vendidos sob os nomes comerciais Marevan e Coumadin, apresentados em diferentes concentrações e dispensados em embalagens com blister.
+
+Classe terapêutica
+A varfarina pertence à classe dos anticoagulantes orais, medicamentos que reduzem a capacidade de coagulação do sangue.
+
+Indicações
+É indicada para o tratamento da fibrilação atrial e da trombose venosa profunda, condições em que há risco de formação de coágulos.
+
+Contraindicações
+Não deve ser usada por pacientes com úlcera péptica nem durante a gravidez.
+
+Interações medicamentosas
+A combinação com ácido acetilsalicílico, também chamado de AAS, tem gravidade alta e favorece o sangramento, pois o efeito antiplaquetário se soma ao anticoagulante. O uso junto com ibuprofeno (Advil) também é de gravidade alta e causa sangramento, porque o anti-inflamatório inibe as plaquetas e agride a mucosa gástrica. A associação com Klaricid, nome comercial da claritromicina, tem gravidade alta: há sangramento por inibição do metabolismo hepático (CYP3A4) da varfarina, elevando o INR. Com o ciprofloxacino ocorre algo parecido, de gravidade alta, com sangramento pela redução do metabolismo da varfarina e elevação do INR. Quem usa Plavix (clopidogrel) junto com este anticoagulante tem interação de gravidade alta, com sangramento por somatório de efeitos antitrombóticos. Já o paracetamol tem interação de gravidade moderada, com aumento do INR, pois o uso regular acima de 2 g por dia interfere no ciclo da vitamina K.
+
+Reações adversas
+A reação adversa descrita neste material é o sangramento.
+
+Posologia e cuidados
+A dose é ajustada pelo médico conforme exames de coagulação. Tome sempre no mesmo horário, com água. Texto ilustrativo.

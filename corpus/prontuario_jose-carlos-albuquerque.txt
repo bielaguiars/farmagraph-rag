@@ -1,0 +1,4 @@
+PRONTUÁRIO AMBULATORIAL (FICTÍCIO)
+Paciente fictício criado para fins acadêmicos.
+
+José Carlos Albuquerque, 65 anos, é acompanhado por hipercolesterolemia, angina e hipertensão arterial. Faz uso contínuo de Zocor 40 mg à noite e Norvasc 5 mg/dia, com boa adesão. Procurou atendimento com tosse produtiva, febre e cansaço há quatro dias. Radiografia de tórax com opacidade em base pulmonar direita, compatível com o diagnóstico de pneumonia. Saturação de oxigênio de 94% em ar ambiente e pressão arterial de 138 por 84 mmHg. Não há queixa de dor torácica além do padrão habitual de sua angina. Conduta em avaliação: o médico avalia iniciar claritromicina para o tratamento ambulatorial, com orientação de hidratação e retorno em 48 horas para reavaliação clínica.

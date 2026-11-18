@@ -1,0 +1,4 @@
+PRONTUÁRIO AMBULATORIAL (FICTÍCIO)
+Paciente fictício criado para fins acadêmicos.
+
+Roberto Nunes Cavalcanti, 61 anos, com doença arterial coronariana e hipotireoidismo. Sofreu infarto prévio e recebeu stent coronariano há seis meses. Em uso contínuo de AAS 100 mg/dia, Plavix 75 mg/dia, Losec 20 mg/dia e Puran T4 75 mcg/dia, com boa adesão. Comparece para retorno de rotina, assintomático do ponto de vista cardiovascular, sem dor torácica, sem falta de ar e com boa tolerância aos exercícios leves. Pressão arterial de 124 por 76 mmHg e frequência cardíaca de 68 bpm. Eletrocardiograma sem alterações novas. Conduta: manter o acompanhamento cardiológico e solicitar exames de rotina, incluindo perfil lipídico e hormônio tireoestimulante, para o próximo retorno.

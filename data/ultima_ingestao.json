@@ -1,0 +1,764 @@
+{
+  "relatorios": [
+    {
+      "arquivo": "bula_acido-acetilsalicilico.txt",
+      "status": "ok",
+      "documento_id": "2c5c03638e623b3d",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 11,
+      "relacoes_aceitas": 10,
+      "relacoes_brutas_llm": 10,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Marevan",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 35.3
+    },
+    {
+      "arquivo": "bula_anlodipino.txt",
+      "status": "ok",
+      "documento_id": "7e68a6c96cdcd236",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 5,
+      "relacoes_aceitas": 4,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "relação não permitida para este documento/seção": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Bloqueador dos canais de cálcio",
+          "canonico": "bloqueador do canal de cálcio",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "novo"
+        },
+        {
+          "superficie": "ZOCOR",
+          "canonico": "sinvastatina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 23.0
+    },
+    {
+      "arquivo": "bula_carbonato-de-litio.txt",
+      "status": "ok",
+      "documento_id": "2b46c23b0478206e",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 8,
+      "relacoes_aceitas": 7,
+      "relacoes_brutas_llm": 8,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "destino é Medicamento, esperado EfeitoAdverso": 1
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 1,
+      "segundos": 27.7
+    },
+    {
+      "arquivo": "bula_ciprofloxacino.txt",
+      "status": "ok",
+      "documento_id": "0bb408a5f853a741",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 5,
+      "relacoes_aceitas": 4,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Antibióticos",
+          "canonico": "antibiótico",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "aproximado"
+        },
+        {
+          "superficie": "Coumadin (varfarina)",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 21.4
+    },
+    {
+      "arquivo": "bula_claritromicina.txt",
+      "status": "ok",
+      "documento_id": "8caa4bf1ed4d545c",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 7,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "relação não permitida para este documento/seção": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Marevan",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 23.7
+    },
+    {
+      "arquivo": "bula_clonazepam.txt",
+      "status": "ok",
+      "documento_id": "a2d948acb410e2ee",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 8,
+      "relacoes_rejeitadas": 2,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 2
+      },
+      "resolucoes": [
+        {
+          "superficie": "BENZODIAZEPÍNICOS",
+          "canonico": "benzodiazepínico",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "aproximado"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 26.7
+    },
+    {
+      "arquivo": "bula_clopidogrel.txt",
+      "status": "ok",
+      "documento_id": "4beaed719fe4bcf6",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 8,
+      "relacoes_aceitas": 7,
+      "relacoes_brutas_llm": 7,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Coumadin (varfarina)",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "aspirina (ácido acetilsalicílico)",
+          "canonico": "ácido acetilsalicílico",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Losec (omeprazol)",
+          "canonico": "omeprazol",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 2,
+      "segundos": 24.4
+    },
+    {
+      "arquivo": "bula_dipirona.txt",
+      "status": "ok",
+      "documento_id": "d26b13ca814b3cf8",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 6,
+      "relacoes_aceitas": 5,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 1,
+      "segundos": 20.5
+    },
+    {
+      "arquivo": "bula_enalapril.txt",
+      "status": "ok",
+      "documento_id": "d48fefe84aae5319",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 9,
+      "relacoes_aceitas": 8,
+      "relacoes_brutas_llm": 9,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Advil (ibuprofeno)",
+          "canonico": "ibuprofeno",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Carbolitium (carbonato de lítio)",
+          "canonico": "carbonato de lítio",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 2,
+      "segundos": 27.5
+    },
+    {
+      "arquivo": "bula_espironolactona.txt",
+      "status": "ok",
+      "documento_id": "0fbb3523c3241692",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 10,
+      "relacoes_aceitas": 9,
+      "relacoes_brutas_llm": 9,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "RENITEC (ENALAPRIL)",
+          "canonico": "enalapril",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "LOSARTANA (COZAAR)",
+          "canonico": "losartana",
+          "rotulo": "Medicamento",
+          "metodo": "exato"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 27.5
+    },
+    {
+      "arquivo": "bula_fluoxetina.txt",
+      "status": "ok",
+      "documento_id": "a274027e1905e28d",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 6,
+      "relacoes_aceitas": 5,
+      "relacoes_brutas_llm": 7,
+      "relacoes_rejeitadas": 2,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1,
+        "relação não permitida para este documento/seção": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "TRAMAL",
+          "canonico": "tramadol",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 23.6
+    },
+    {
+      "arquivo": "bula_hidroclorotiazida.txt",
+      "status": "ok",
+      "documento_id": "167b7fa65e118c49",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 6,
+      "relacoes_aceitas": 5,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Carbolitium",
+          "canonico": "carbonato de lítio",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 22.2
+    },
+    {
+      "arquivo": "bula_ibuprofeno.txt",
+      "status": "ok",
+      "documento_id": "1d86bab3cae8e9cd",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 13,
+      "relacoes_aceitas": 12,
+      "relacoes_brutas_llm": 12,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Coumadin (varfarina)",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Aspirina (ácido acetilsalicílico)",
+          "canonico": "ácido acetilsalicílico",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Renitec (enalapril)",
+          "canonico": "enalapril",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 32.1
+    },
+    {
+      "arquivo": "bula_levotiroxina.txt",
+      "status": "ok",
+      "documento_id": "881a68213da6573c",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 4,
+      "relacoes_aceitas": 3,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 2,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 2
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 1,
+      "segundos": 22.0
+    },
+    {
+      "arquivo": "bula_losartana.txt",
+      "status": "ok",
+      "documento_id": "f04816d594a2b290",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 6,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Bloqueadores do receptor de angiotensina",
+          "canonico": "bloqueador do receptor de angiotensina",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "aproximado"
+        },
+        {
+          "superficie": "Alivium",
+          "canonico": "ibuprofeno",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 2,
+      "segundos": 22.4
+    },
+    {
+      "arquivo": "bula_metformina.txt",
+      "status": "ok",
+      "documento_id": "3c66b4c5e0c7cb4d",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 4,
+      "relacoes_aceitas": 3,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 2,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 2
+      },
+      "resolucoes": [
+        {
+          "superficie": "Biguanidas",
+          "canonico": "biguanida",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "aproximado"
+        }
+      ],
+      "direcoes_corrigidas": 2,
+      "segundos": 20.5
+    },
+    {
+      "arquivo": "bula_omeprazol.txt",
+      "status": "ok",
+      "documento_id": "896f0251b8e360af",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 3,
+      "relacoes_aceitas": 2,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 3,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 3
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 2,
+      "segundos": 22.8
+    },
+    {
+      "arquivo": "bula_paracetamol.txt",
+      "status": "ok",
+      "documento_id": "fe27beff8c9d275d",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Marevan",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 21.4
+    },
+    {
+      "arquivo": "bula_sertralina.txt",
+      "status": "ok",
+      "documento_id": "86a26b177508bffb",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 6,
+      "relacoes_aceitas": 5,
+      "relacoes_brutas_llm": 6,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 1
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 2,
+      "segundos": 22.1
+    },
+    {
+      "arquivo": "bula_sinvastatina.txt",
+      "status": "ok",
+      "documento_id": "e9d2355498541f0f",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 9,
+      "relacoes_aceitas": 8,
+      "relacoes_brutas_llm": 8,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Estatinas",
+          "canonico": "estatina",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "aproximado"
+        },
+        {
+          "superficie": "Klaricid",
+          "canonico": "claritromicina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 24.8
+    },
+    {
+      "arquivo": "bula_tramadol.txt",
+      "status": "ok",
+      "documento_id": "ca1d0ffe8dc474d0",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 5,
+      "relacoes_aceitas": 4,
+      "relacoes_brutas_llm": 6,
+      "relacoes_rejeitadas": 2,
+      "motivos_rejeicao": {
+        "entidade não ancorada no texto": 2
+      },
+      "resolucoes": [
+        {
+          "superficie": "Prozac (fluoxetina)",
+          "canonico": "fluoxetina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 2,
+      "segundos": 21.6
+    },
+    {
+      "arquivo": "bula_varfarina.txt",
+      "status": "ok",
+      "documento_id": "f0a8fee5dd510262",
+      "tipo": "bula",
+      "trechos": 8,
+      "entidades": 13,
+      "relacoes_aceitas": 12,
+      "relacoes_brutas_llm": 12,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Anticoagulantes Orais",
+          "canonico": "anticoagulante oral",
+          "rotulo": "ClasseTerapeutica",
+          "metodo": "tokens"
+        },
+        {
+          "superficie": "AAS",
+          "canonico": "ácido acetilsalicílico",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "IBUPROFENO (Advil)",
+          "canonico": "ibuprofeno",
+          "rotulo": "Medicamento",
+          "metodo": "exato"
+        },
+        {
+          "superficie": "Klaricid",
+          "canonico": "claritromicina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Plavix (clopidogrel)",
+          "canonico": "clopidogrel",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 1,
+      "segundos": 29.8
+    },
+    {
+      "arquivo": "prontuario_ana-beatriz-lima.txt",
+      "status": "ok",
+      "documento_id": "f173456bb0a2a53d",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 3,
+      "relacoes_aceitas": 2,
+      "relacoes_brutas_llm": 2,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Prozac",
+          "canonico": "fluoxetina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 0,
+      "segundos": 6.3
+    },
+    {
+      "arquivo": "prontuario_antonio-pereira-dos-santos.txt",
+      "status": "ok",
+      "documento_id": "658c34778fa05f09",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 6,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Glifage",
+          "canonico": "metformina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Renitec",
+          "canonico": "enalapril",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Aldactone",
+          "canonico": "espironolactona",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 0,
+      "segundos": 11.7
+    },
+    {
+      "arquivo": "prontuario_francisca-das-chagas-souza.txt",
+      "status": "ok",
+      "documento_id": "f9c867044bdeed67",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 4,
+      "relacoes_aceitas": 3,
+      "relacoes_brutas_llm": 3,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Carbolitium 300 mg",
+          "canonico": "carbonato de lítio",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 0,
+      "segundos": 8.5
+    },
+    {
+      "arquivo": "prontuario_jose-carlos-albuquerque.txt",
+      "status": "ok",
+      "documento_id": "76b2bbf660112a30",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 3,
+      "relacoes_aceitas": 2,
+      "relacoes_brutas_llm": 3,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "destino é Paciente, esperado Condicao": 1
+      },
+      "resolucoes": [
+        {
+          "superficie": "Zocor",
+          "canonico": "sinvastatina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Norvasc",
+          "canonico": "anlodipino",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 3,
+      "segundos": 7.4
+    },
+    {
+      "arquivo": "prontuario_luiza-andrade.txt",
+      "status": "ok",
+      "documento_id": "ea59e5c7e24d77c6",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 2,
+      "relacoes_aceitas": 1,
+      "relacoes_brutas_llm": 2,
+      "relacoes_rejeitadas": 1,
+      "motivos_rejeicao": {
+        "destino não é Medicamento": 1
+      },
+      "resolucoes": [],
+      "direcoes_corrigidas": 0,
+      "segundos": 6.3
+    },
+    {
+      "arquivo": "prontuario_maria-jose-ferreira.txt",
+      "status": "ok",
+      "documento_id": "bb8c55cd4f7c5774",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 6,
+      "relacoes_aceitas": 5,
+      "relacoes_brutas_llm": 5,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "Marevan",
+          "canonico": "varfarina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Cozaar",
+          "canonico": "losartana",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 0,
+      "segundos": 9.9
+    },
+    {
+      "arquivo": "prontuario_roberto-nunes-cavalcanti.txt",
+      "status": "ok",
+      "documento_id": "d0e6ec66828de9d1",
+      "tipo": "prontuario",
+      "trechos": 1,
+      "entidades": 7,
+      "relacoes_aceitas": 6,
+      "relacoes_brutas_llm": 6,
+      "relacoes_rejeitadas": 0,
+      "motivos_rejeicao": {},
+      "resolucoes": [
+        {
+          "superficie": "AAS",
+          "canonico": "ácido acetilsalicílico",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Plavix",
+          "canonico": "clopidogrel",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Losec",
+          "canonico": "omeprazol",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        },
+        {
+          "superficie": "Puran T4",
+          "canonico": "levotiroxina",
+          "rotulo": "Medicamento",
+          "metodo": "dicionario"
+        }
+      ],
+      "direcoes_corrigidas": 0,
+      "segundos": 11.4
+    }
+  ],
+  "algoritmos": {
+    "motor": "Neo4j GDS",
+    "communityCount": 6,
+    "modularity": 0.5506198347107438
+  }
+}

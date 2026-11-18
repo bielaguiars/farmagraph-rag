@@ -1,0 +1,121 @@
+{
+  "_descricao": "Dicionário controlado usado na resolução de entidades (equivalente a uma lista DCB/ANVISA de princípios ativos e nomes comerciais, mais sinônimos clínicos). Não contém relações.",
+  "medicamentos": {
+    "varfarina": [
+      "Marevan",
+      "Coumadin"
+    ],
+    "ácido acetilsalicílico": [
+      "AAS",
+      "Aspirina"
+    ],
+    "ibuprofeno": [
+      "Advil",
+      "Alivium"
+    ],
+    "losartana": [
+      "Cozaar",
+      "Aradois"
+    ],
+    "enalapril": [
+      "Renitec"
+    ],
+    "espironolactona": [
+      "Aldactone"
+    ],
+    "hidroclorotiazida": [
+      "Clorana"
+    ],
+    "metformina": [
+      "Glifage"
+    ],
+    "sinvastatina": [
+      "Zocor"
+    ],
+    "claritromicina": [
+      "Klaricid"
+    ],
+    "anlodipino": [
+      "Norvasc"
+    ],
+    "omeprazol": [
+      "Losec"
+    ],
+    "clopidogrel": [
+      "Plavix"
+    ],
+    "levotiroxina": [
+      "Puran T4",
+      "Synthroid"
+    ],
+    "fluoxetina": [
+      "Prozac",
+      "Daforin"
+    ],
+    "sertralina": [
+      "Zoloft",
+      "Assert"
+    ],
+    "tramadol": [
+      "Tramal"
+    ],
+    "clonazepam": [
+      "Rivotril"
+    ],
+    "paracetamol": [
+      "Tylenol"
+    ],
+    "dipirona": [
+      "Novalgina"
+    ],
+    "carbonato de lítio": [
+      "Carbolitium"
+    ],
+    "ciprofloxacino": [
+      "Cipro"
+    ]
+  },
+  "sinonimos_medicamento": {
+    "warfarina": "varfarina",
+    "acido acetil salicilico": "ácido acetilsalicílico",
+    "aspirina": "ácido acetilsalicílico",
+    "litio": "carbonato de lítio",
+    "carbonato de litio": "carbonato de lítio",
+    "metamizol": "dipirona",
+    "acetaminofeno": "paracetamol",
+    "ciprofloxacina": "ciprofloxacino",
+    "amlodipino": "anlodipino",
+    "anlodipina": "anlodipino",
+    "losartana potassica": "losartana",
+    "maleato de enalapril": "enalapril"
+  },
+  "sinonimos_condicao": {
+    "hipertensao": "hipertensão arterial",
+    "pressao alta": "hipertensão arterial",
+    "hipertensao arterial sistemica": "hipertensão arterial",
+    "diabetes": "diabetes tipo 2",
+    "diabetes mellitus tipo 2": "diabetes tipo 2",
+    "colesterol alto": "hipercolesterolemia",
+    "gestacao": "gravidez",
+    "gravidez/gestacao": "gravidez",
+    "ulcera peptica ativa": "úlcera péptica",
+    "tvp": "trombose venosa profunda",
+    "toc": "transtorno obsessivo-compulsivo",
+    "infeccao do trato urinario": "infecção urinária",
+    "potassio elevado": "hipercalemia",
+    "hiperpotassemia": "hipercalemia",
+    "dor intensa": "dor",
+    "dor moderada a intensa": "dor"
+  },
+  "sinonimos_efeito": {
+    "hemorragia": "sangramento",
+    "risco de sangramento": "sangramento",
+    "sangramentos": "sangramento",
+    "hiperpotassemia": "hipercalemia",
+    "potassio elevado": "hipercalemia",
+    "toxicidade do litio": "intoxicação por lítio",
+    "aumento do inr": "aumento do INR",
+    "depressao respiratoria grave": "depressão respiratória",
+    "lesao muscular grave": "rabdomiólise"
+  }
+}
