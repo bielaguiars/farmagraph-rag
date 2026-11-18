@@ -86,6 +86,8 @@ Ou simplesmente `.\iniciar.ps1` (sobe Neo4j, Ollama e a interface).
 - Neo4j Browser: <http://localhost:7474> (usuário `neo4j`, senha `farmagraph123` — credencial local de desenvolvimento)
 - Avaliação: `.\.venv\Scripts\python -m app.evaluate`
 - Artigo (SBC, .docx e .md com os números da avaliação): `.\.venv\Scripts\python docs\gerar_artigo.py`
+- PDF da apresentação (consultas + prints de `docs/prints/`): `uv run --with playwright python docs\gerar_pdf_apresentacao.py`
+- Roteiro da defesa e respostas para perguntas prováveis: `docs/roteiro_defesa.md`
 - Testes: `.\.venv\Scripts\python -m pytest`
 
 Configurações em `.env` (veja `.env.example`).

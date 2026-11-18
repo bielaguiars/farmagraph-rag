@@ -158,6 +158,14 @@ def test_texto_do_caminho():
     assert _path_text(path) == "fluoxetina -INTERAGE_COM-> tramadol <-INTERAGE_COM- clonazepam"
 
 
+def test_interacao_simetrica_perde_a_seta_no_cypher_do_llm():
+    from app.retrieval import undirect_symmetric
+
+    assert undirect_symmetric("MATCH (m)-[:INTERAGE_COM]->(o) RETURN o") == "MATCH (m)-[:INTERAGE_COM]-(o) RETURN o"
+    assert undirect_symmetric("MATCH (m)<-[i:INTERAGE_COM]-(o) RETURN o") == "MATCH (m)-[i:INTERAGE_COM]-(o) RETURN o"
+    assert undirect_symmetric("MATCH (p)-[:USA]->(m) RETURN m") == "MATCH (p)-[:USA]->(m) RETURN m"
+
+
 def test_caminho_de_dois_saltos_vira_conclusao_sem_relacao_direta():
     from app.retrieval import _path_alert
 

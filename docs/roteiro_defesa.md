@@ -35,7 +35,8 @@ Mostre o diagrama do README.
 4. **Interface:** resposta com citações, subgrafo interativo, Cypher executado, nós consultados e nível de confiança.
 
 ### 4. Demonstração (5–6 min)
-Use os botões de exemplo da barra lateral.
+Use os botões de exemplo da barra lateral: um clique preenche a pergunta e já roda a busca (~25 s cada).
+Para comparar com o RAG vetorial, ligue "Comparar com RAG só vetorial" **antes** de clicar no exemplo.
 
 | Pergunta | O que mostrar |
 |---|---|

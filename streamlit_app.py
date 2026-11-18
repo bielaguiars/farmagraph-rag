@@ -56,9 +56,12 @@ with st.sidebar:
     compare = st.toggle("Comparar com RAG só vetorial", value=False)
     st.divider()
     st.markdown("**Perguntas de exemplo**")
+    def _usar_exemplo(texto: str) -> None:  # callback: roda antes do rerun, então o text_area já nasce preenchido
+        st.session_state["pergunta"] = texto
+        st.session_state["executar"] = True
+
     for i, exemplo in enumerate(EXEMPLOS):
-        if st.button(exemplo, key=f"ex{i}", use_container_width=True):
-            st.session_state["pergunta"] = exemplo
+        st.button(exemplo, key=f"ex{i}", use_container_width=True, on_click=_usar_exemplo, args=(exemplo,))
     st.divider()
     st.caption(DISCLAIMER)
 
@@ -75,7 +78,7 @@ with tab_ask:
     st.markdown("### Pergunte sobre medicamentos, interações e pacientes")
     question = st.text_area("Pergunta", key="pergunta", height=80,
                             placeholder="Ex.: A Maria José pode tomar ibuprofeno para a dor no joelho?")
-    go = st.button("Pesquisar", type="primary")
+    go = st.button("Pesquisar", type="primary") or st.session_state.pop("executar", False)
     if go and question.strip():
         with st.spinner("Busca vetorial → ligação de entidades → travessia multi-hop → Cypher → LLM..."):
             answer = rag.ask(question.strip(), use_llm_cypher=use_llm_cypher, hops=hops)
@@ -155,11 +158,13 @@ with tab_ask:
             if r.cypher_llm is not None:
                 st.markdown("**6. Text-to-Cypher (gerado pelo LLM, validado como somente leitura)**")
                 st.code(r.cypher_llm.get("cypher") or "(vazio)", language="cypher")
+                for t in r.cypher_llm.get("tentativas") or []:
+                    st.caption(f"↺ tentativa anterior rejeitada pela validação e corrigida pelo LLM: {t['erro'][:160]}")
                 if r.cypher_llm.get("erro"):
                     st.caption(f"⚠️ {r.cypher_llm['erro']}")
                 elif r.cypher_llm.get("linhas"):
                     st.dataframe(pd.DataFrame(r.cypher_llm["linhas"]), hide_index=True, use_container_width=True)
-        with st.expander("Contexto completo enviado ao LLM"):
+        with st.expander("Contexto recuperado (com alertas K, o LLM recebe só os alertas)"):
             st.text(answer.contexto)
 
 # ---------------------------------------------------------------- explorar grafo

@@ -312,14 +312,22 @@ class HybridRetriever:
     def text_to_cypher(self, question: str, seeds: list[dict]) -> dict:
         entidades = ", ".join(f"{s['nome']} ({s['label']})" for s in seeds) or "nenhuma"
         prompt = CYPHER_PROMPT.format(schema=schema_description(), entidades=entidades, pergunta=question)
-        out: dict = {"cypher": "", "linhas": [], "erro": None}
-        try:
-            cypher = self.llm.generate_json(prompt, CYPHER_SCHEMA, num_predict=300).get("cypher", "").strip()
-        except RuntimeError as exc:
-            out["erro"] = str(exc)
-            return out
+        out: dict = {"cypher": "", "linhas": [], "erro": None, "tentativas": []}
+        feedback = ""
+        for _ in range(2):  # autocorreção: se a validação rejeitar, o LLM recebe o erro e tenta de novo
+            try:
+                cypher = self.llm.generate_json(prompt + feedback, CYPHER_SCHEMA, num_predict=300).get("cypher", "").strip()
+                cypher = undirect_symmetric(cypher)
+            except RuntimeError as exc:
+                out["erro"] = str(exc)
+                return out
+            ok, motivo = self.validate_read_only(cypher)
+            if ok:
+                break
+            out["tentativas"].append({"cypher": cypher, "erro": motivo})
+            feedback = (f"\nA consulta anterior foi rejeitada pela validação: {motivo}\nConsulta rejeitada: {cypher}\n"
+                        "Gere outra consulta, mais simples, que corrija o problema.\n")
         out["cypher"] = cypher
-        ok, motivo = self.validate_read_only(cypher)
         if not ok:
             out["erro"] = motivo
             return out
@@ -344,6 +352,14 @@ class HybridRetriever:
         if summary.query_type != "r":
             return False, f"consulta não é somente leitura (tipo {summary.query_type})"
         return True, ""
+
+
+SYMMETRIC_REL = re.compile(r"<?-\[([^\]]*:\s*INTERAGE_COM\b[^\]]*)\]->?")
+
+
+def undirect_symmetric(cypher: str) -> str:
+    """INTERAGE_COM é simétrica e gravada numa ordem canônica: com seta, a consulta perderia metade das interações."""
+    return SYMMETRIC_REL.sub(r"-[\1]-", cypher)
 
 
 def _drop_contained(refs: list[dict]) -> list[dict]:

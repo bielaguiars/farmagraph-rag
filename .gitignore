@@ -7,3 +7,5 @@ lib/
 *.html.tmp
 data/*_log.txt
 docs/~$*.docx
+docs/FarmaGraph_RAG_apresentacao.html
+docs/slides/

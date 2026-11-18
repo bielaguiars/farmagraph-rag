@@ -1,7 +1,7 @@
 # FarmaGraph RAG: Recuperação Aumentada por Grafos de Conhecimento para Interações Medicamentosas com LLM Local
 
-**[Nome do Integrante 1], [Nome do Integrante 2], [Nome do Integrante 3], [Nome do Integrante 4]**  
-Curso de Bacharelado em Ciência da Computação – [Instituição]  
+**Biel Aguiar, Thiago Rocha**  
+Curso de Bacharelado em Ciência da Computação – Unipê Cruzeiro do Sul  
 {[e-mails dos integrantes]}
 
 > **Abstract.** *Large language models (LLMs) hallucinate and struggle with questions that require chaining facts from different sources, which is critical in healthcare. This paper presents FarmaGraph RAG, a question answering system about drugs that combines vector search and traversal of a Neo4j knowledge graph (GraphRAG) with logical queries over the graph (KAG). The graph is built from 22 simplified drug leaflets and 7 fictitious medical records by a local LLM (Llama 3.2, 3B) using structured output, section-guided extraction, six semantic constraints and entity resolution. Retrieval uses VECTOR, FULLTEXT and RANGE indexes, multi-hop expansion, shortest paths, PageRank and LLM-generated Cypher validated as read-only. Extraction reached 0.99 precision and 0.85 recall against 168 reference facts, and GraphRAG covered 94.0% of the expected facts in 9 multi-hop questions, versus 17.0% for vector-only RAG and 15.0% for the LLM without context.*
@@ -108,7 +108,7 @@ Para cada pergunta, o recuperador executa os passos abaixo; todas as consultas C
 - **Raciocínio KAG:** consultas de 2 a 3 saltos que produzem conclusões verificadas: interações entre os medicamentos do paciente e o medicamento perguntado, contraindicações pelas condições do paciente e alternativas que tratam a condição sem interação (Listagem 1).
 - **Caminhos mínimos:** `shortestPath` entre pares de entidades da pergunta (ex.: fluoxetina → tramadol ← clonazepam).
 - **Ranking:** os fatos são pontuados pelo tipo de relação, por ligarem sementes, por estarem em caminhos, pela gravidade e pelo PageRank dos nós, e os mais bem pontuados entram no contexto.
-- **Text-to-Cypher (opcional):** o LLM gera uma consulta a partir do esquema e de exemplos; ela só é executada se passar por uma lista de bloqueio (CREATE, MERGE, DELETE, SET, CALL...) e se o `EXPLAIN` do Neo4j indicar consulta somente de leitura (`query_type = 'r'`).
+- **Text-to-Cypher (opcional):** o LLM gera uma consulta a partir do esquema e de exemplos; ela só é executada se passar por uma lista de bloqueio (CREATE, MERGE, DELETE, SET, CALL...) e se o `EXPLAIN` do Neo4j indicar consulta somente de leitura (`query_type = 'r'`). Se for rejeitada, o erro volta ao LLM para uma segunda tentativa, e setas em INTERAGE_COM são removidas, pois a relação é simétrica.
 
 *Listagem 1. Consulta KAG: interações entre os medicamentos em uso pelo paciente e o candidato.*
 

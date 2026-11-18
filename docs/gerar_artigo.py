@@ -322,7 +322,8 @@ def build_content(data: dict) -> dict:
        "gravidade e pelo PageRank dos nós, e os mais bem pontuados entram no contexto.",
        "**Text-to-Cypher (opcional):** o LLM gera uma consulta a partir do esquema e de exemplos; ela só é executada "
        "se passar por uma lista de bloqueio (CREATE, MERGE, DELETE, SET, CALL...) e se o `EXPLAIN` do Neo4j indicar "
-       "consulta somente de leitura (`query_type = 'r'`)."])
+       "consulta somente de leitura (`query_type = 'r'`). Se for rejeitada, o erro volta ao LLM para uma segunda "
+       "tentativa, e setas em INTERAGE_COM são removidas, pois a relação é simétrica."])
     CODE("Listagem 1. Consulta KAG: interações entre os medicamentos em uso pelo paciente e o candidato.",
          "MATCH (p:Paciente)-[:USA]->(m:Medicamento)-[i:INTERAGE_COM]-(c:Medicamento)\n"
          "WHERE elementId(p) IN $pacientes\n"
@@ -480,8 +481,8 @@ def build_content(data: dict) -> dict:
     return {
         "titulo": "FarmaGraph RAG: Recuperação Aumentada por Grafos de Conhecimento para Interações Medicamentosas "
                   "com LLM Local",
-        "autores": "[Nome do Integrante 1], [Nome do Integrante 2], [Nome do Integrante 3], [Nome do Integrante 4]",
-        "afiliacao": "Curso de Bacharelado em Ciência da Computação – [Instituição]",
+        "autores": "Biel Aguiar, Thiago Rocha",
+        "afiliacao": "Curso de Bacharelado em Ciência da Computação – Unipê Cruzeiro do Sul",
         "emails": "{[e-mails dos integrantes]}",
         "abstract": abstract,
         "resumo": resumo,
